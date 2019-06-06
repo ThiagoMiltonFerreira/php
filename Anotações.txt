@@ -1,0 +1,56 @@
+Limpa a variavel ela passa a nao existir a partir deste momento.
+Exemplo:
+<$php
+  $Nome1 = "Joao";
+  $SobreNome = "Silva";
+
+  // Limpa a variavel $nome1 e $SobreNome
+  unset($nome1, $SobreNome);
+
+  //Verifica se a variavel existe, caso exista mostre na tela.
+  if(isset($SobreNome))
+  {
+    echo $SobreNome;
+    
+  }
+
+?>
+
+
+
+VARIAVEL GLOBAL
+
+para fegar a variavel global se usa a palavra reservada global
+exemplo 
+
+$nome = "Glaucio"; // variavel global
+
+function teste()
+{
+	global $nome; // mostra que a variavel nome e a variavel de fora, vou ultilizar a variavel global
+	echo $nome."<br>";
+}
+ 
+ACRECENTANDO TEXTO NA VARIAVEL
+
+$nome = "Thiago Milton Ferreira";
+$nome.=" 22 anos.";
+
+o .= junta com o valor da variavel.
+RESULTADO Thiago Milton Ferreira 22 anos
+
+COMPARAÇÃO COM 3 SINAIS DE =
+===
+compara se o valor e o tipo e igual
+se e as duas variaveis sao booleanas por exemplo
+
+operador comparaçao <=> (Menor igual ou maior)
+exemplo 
+a<=>b
+se a for menor que b resultado  1
+se a for igual  b resultado  0
+se b for maior a resultado -1
+
+*verifica se e nulo 
+echo a ?? b ?? c
+se a for nulo mostra b se b for nulo mostra c
